@@ -1,0 +1,88 @@
+* {
+  font-family: 'Kulim Park', helvetica, sans-serif;
+}
+
+#title {
+  font-size: 3rem;
+  padding: 3rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
+
+#intro {
+  font-size: 1rem;
+  padding: 3rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#gallery {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+img {
+  max-width: 100%;
+  border: 2px solid white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.pic:hover {
+  cursor: pointer;
+  background-color: hotpink;
+
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+.grow {
+  -webkit-transform: scale(3);
+  transform: scale(3);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+
+}
+
+#footer {
+  font-size: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (min-width: 850px) {
+  #gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  #gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
